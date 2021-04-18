@@ -29,7 +29,7 @@ Run the PowerPoint application as an administor on the computer, and open the pr
 #### 3. Execute PowerShell Script
 a. The User executes the PowerShell code in the script file.
 
-b. The narration in the audio files is embedded into the presentation. This is achieved by naming the audio files as numbers, eac corresponding to a slide number.
+b. The narration in the audio files is embedded into the presentation. This is achieved by naming the audio files as numbers, each corresponding to a slide number.
 
 c. The PowerPoint slides are updated by the executed PowerShell script.
 
