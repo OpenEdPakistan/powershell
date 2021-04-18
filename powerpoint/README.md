@@ -1,1 +1,19 @@
 # Automating Microsoft PowerPoint using PowerShell
+## Why?
+To avoid manually inserting Urdu Audio files (with the .wav extension) into Microsoft PowerPoint presentation.
+## What?
+PowerShell script to perform the same task automatically in seconds.
+## How?
+### Pre-requisites
+*The following two are pre-requisites for executing the PowerShell script file.*
+#### PowerShell IDE
+Open the PowerShell file **Add-Audio.ps1** in Microsoft Visual Studio Code, Windows PowerShell ISE, or PowerShell Studio 2021. I used Windows PowerShell ISE on my machine.
+#### Executiopn Policy
+If you get an error that the file is not signed when you run the script, you have to execute the following PowerShell command in your environment.
+```
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+### Steps
+1. One
+1. Two
+1. Three
