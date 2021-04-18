@@ -36,3 +36,27 @@ c. The PowerPoint slides are updated by the executed PowerShell script.
 d. The slides with the audio and visual content both are ready for use by the User. Keep in mind that the file needs to be saved manually (either by using the menu option or the shortcut-key) in order for the updates to be committed to the disk.
 
 View the PowerShell file here: https://github.com/OpenEdPakistan/powershell/blob/main/code/Add-Audio.ps1
+For reference, the code is also given below:
+```
+[System.Reflection.Assembly]::LoadWithPartialName("Microsoft.Office.Interop.PowerPoint") # Load PowerPoint dll
+$pptx = New-Object -ComObject PowerPoint.Application # Create COM object from PowerPoint application
+
+function Add-Audio([Microsoft.Office.Interop.PowerPoint.PresentationClass]$Presentation, [string]$Folder)
+{
+
+	Set-ExecutionPolicy -executionpolicy bypass
+	for ($i = 1; $i -le $Presentation.Slides.Count; $i++) # For each slide in presentation
+	{
+        $fileName = $i # Initialize file name
+        if ($i -le 9)  # If current slide number is a single-digit number
+        {
+            $fileName = "0" + $i # Add a zero in the file name
+        }
+        $Slide = [string]$Presentation.Slides($i).SlideShowTransition.SoundEffect.ImportFromFile($Folder + $fileName + ".wav") # Add audio file to slide transition
+	}
+
+    Write-Output "Done." # Display success message
+}
+
+Add-Audio -Presentation $pptx.ActivePresentation -Folder "C:\Folder-Name\" #Execute Function with parameters
+```
