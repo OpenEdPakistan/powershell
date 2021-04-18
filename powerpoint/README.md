@@ -15,7 +15,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 *Note that the above command only affects your current session.*
 ### Steps
-[../files/PowerShell-PowerPoint-STD.png]
+![PowerPoiny Automation](../files/PowerShell-PowerPoint-STD.png)
 *The process comprises the following 3 steps, as shown above:*
 #### 1. Create Presentation
 #### 2. Open Presentation File
