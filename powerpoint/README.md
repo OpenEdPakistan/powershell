@@ -34,3 +34,5 @@ b. The narration in the audio files is embedded into the presentation. This is a
 c. The PowerPoint slides are updated by the executed PowerShell script.
 
 d. The slides with the audio and visual content both are ready for use by the User. Keep in mind that the file needs to be saved manually (either by using the menu option or the shortcut-key) in order for the updates to be committed to the disk.
+
+View the PowerShell file here: https://github.com/OpenEdPakistan/powershell/blob/main/code/Add-Audio.ps1
