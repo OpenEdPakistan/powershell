@@ -1,3 +1,5 @@
+[Read in Urdu](README-Urdu.md)
+
 # Automating Microsoft PowerPoint using PowerShell
 ## Why?
 To avoid manually inserting Urdu Audio files (with the .wav extension) into Microsoft PowerPoint presentation.
