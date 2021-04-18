@@ -1,2 +1,2 @@
 # PowerShell
-PowerShell scripts for automating manual tasks
+PowerShell scripts for automating manual tasks.
