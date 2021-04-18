@@ -26,6 +26,9 @@ c. The educational content is created and stored in a PowerPoint presentation.
 Run the PowerPoint application as an administor on the computer, and open the presentation file that the audio needs to be added to (created in step 1c)
 #### 3. Execute PowerShell Script
 a. The User executes the PowerShell code in the script file.
+
 b. The narration in the audio files is embedded into the presentation. This is achieved by naming the audio files as numbers, eac corresponding to a slide number.
+
 c. The PowerPoint slides are updated by the executed PowerShell script.
+
 d. The slides with the audio and visual content both are ready for use by the User. Keep in mind that the file needs to be saved manually (either by using the menu option or the shortcut-key) in order for the updates to be committed to the disk.
