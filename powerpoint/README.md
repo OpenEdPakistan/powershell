@@ -43,7 +43,6 @@ $pptx = New-Object -ComObject PowerPoint.Application # Create COM object from Po
 
 function Add-Audio([Microsoft.Office.Interop.PowerPoint.PresentationClass]$Presentation, [string]$Folder)
 {
-
 	Set-ExecutionPolicy -executionpolicy bypass
 	for ($i = 1; $i -le $Presentation.Slides.Count; $i++) # For each slide in presentation
 	{
@@ -52,7 +51,9 @@ function Add-Audio([Microsoft.Office.Interop.PowerPoint.PresentationClass]$Prese
         {
             $fileName = "0" + $i # Add a zero in the file name
         }
-        $Slide = [string]$Presentation.Slides($i).SlideShowTransition.SoundEffect.ImportFromFile($Folder + $fileName + ".wav") # Add audio file to slide transition
+	
+	# Add audio file to slide transition
+        $Slide = [string]$Presentation.Slides($i).SlideShowTransition.SoundEffect.ImportFromFile($Folder + $fileName + ".wav")
 	}
 
     Write-Output "Done." # Display success message
