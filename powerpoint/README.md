@@ -18,7 +18,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ![PowerPoiny Automation](../files/PowerShell-PowerPoint-STD.png)
 *The process comprises the following 3 steps, as shown above:*
 #### 1. Create Content
-a. The User enter Urdu text into the text-to-speech system.
+a. The User enters Urdu text into the text-to-speech system.
 
 b. The generated Urdu audio files are stored in a Folder.
 
